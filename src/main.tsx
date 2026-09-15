@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { A11yProvider } from './context/A11yContext'
 import { AuthProvider } from './context/AuthContext'
 import { StoreProvider } from './context/StoreContext'
@@ -22,9 +22,9 @@ createRoot(document.getElementById('root')!).render(
               <OnboardingProvider>
                 <AdminProvider>
                   <ToastProvider>
-                    <BrowserRouter>
+                    <HashRouter>
                       <App />
-                    </BrowserRouter>
+                    </HashRouter>
                   </ToastProvider>
                 </AdminProvider>
               </OnboardingProvider>
